@@ -1,3 +1,8 @@
-<div class="grid">      
-    
+<div style="background-color:rgb(202, 202, 202); border-radius: 5px;">
+    <input list="lista" name="browser" id="browser" style="width: 100%;">      
+    <datalist id="lista">
+            <% repartos.forEach((element) => {%>
+                <option value='<%= element.code%>'><%= element.name%></option>
+            <% }) %>
+    </datalist>
 </div>
