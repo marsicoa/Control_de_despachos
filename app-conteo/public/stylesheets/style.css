@@ -1,0 +1,183 @@
+    body{
+        background-image: url('');
+        background-color:rgb(180, 179, 186);
+        align-content: center;
+    }
+    div.container{
+        margin-top: 50px;
+    }
+    img.banner{
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+    .navbar.navbar-expand-lg.navbar-light{
+        background-color:rgb(36, 36, 36)/*#454d55*/;
+    }
+    .tiny.material-icons{
+        color:aqua;
+        font-size: 3rem;
+    }
+    .btn.btn-success{
+        background-color: rgb(36, 36, 36);
+        color: aqua;/* 
+        bottom: 0%;
+        position:relative;
+        margin-bottom: 0%; */
+        /*margin-top: 20px;*/
+        font-size: 2rem;
+        width: 100%;
+        height: 60px;
+        /*text-shadow: 0.2px 0.2px 3px rgb(186, 186, 186);*/
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: "area-one area-one area-two area-two area-three area-three area-four area-four area-five area-five";
+        width: auto;
+        max-width: 600px;
+        margin: auto;
+    }
+    .lead{
+        color: black;
+        text-align: center;
+        font-size: 4rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 3.5px 3.5px 3.5px aqua;
+    }
+    #barcode{
+        font-size: 3rem;
+        color: rgb(0, 0, 0)
+    }
+    #send{
+        display: none;
+    }
+    #titulito{
+        position: fixed;
+        margin-left: 100%;   
+    }
+    /*moblile -->*/
+    @media screen and (max-width: 992px) {
+        body{
+            background-image: url('');
+            /*background-color: black;*/
+            align-content: center;
+        }
+        img.banner{
+            width:100%;
+            height: auto;
+            padding: 5%;
+            
+        }
+        a{
+            align-items:baseline;
+            text-align: right;
+            width: 100%;
+            height: auto;
+        }     
+        .navbar.navbar-expand-lg.navbar-light{
+            background-color:rgb(36, 36, 36)/*#454d55*/;
+            align-content:center;
+        }
+        .collapse.navbar-collapse{
+            display: block;
+        }
+        .navbar-nav.mr-auto{
+            display: block;
+        }
+        .btn.btn-success{
+            background-color: rgb(36, 36, 36);
+            color: aqua;
+            /* position:relative;
+            margin-bottom: 0%; */
+            font-size: 1.5rem;
+            width: 100%;
+            height: 60px;
+            /*text-shadow: 0.2px 0.2px 3px rgb(186, 186, 186);*/
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-areas: "area-one area-one area-two area-two area-three area-three area-four area-four area-five area-five";
+            width: auto;
+            max-width: 600px;
+            margin: auto;
+        }
+        .tiny.material-icons{
+            color:aqua;
+            font-size:3rem;
+            text-align: top;
+        }
+        #barcode{
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+        }
+        #titulito{
+            display: none;
+        }
+        #formulario{
+            margin-top: 80px;
+        }   
+    }
+    @media screen and (max-width:351px){
+        body{
+            background-image: url('');
+            /*background-color: black;*/
+            align-content: center;
+        }
+        img.banner{
+            width:100%;
+            height: auto;
+            padding: 5%;
+            
+        }
+        a{
+            align-items:baseline;
+            text-align: right;
+            width: 100%;
+            height: auto;
+        }     
+        .navbar.navbar-expand-lg.navbar-light{
+            background-color:rgb(36, 36, 36)/*#454d55*/;
+            align-content:center;
+        }
+        .collapse.navbar-collapse{
+            display: block;
+        }
+        .navbar-nav.mr-auto{
+            display: block;
+        }
+        .btn.btn-success{
+            background-color: rgb(36, 36, 36);
+            color: aqua;/* 
+            position:relative;
+            margin-bottom: 0%; */
+            font-size: 1.5rem;
+            width: 100%;
+            height: 60px;
+            /*text-shadow: 0.2px 0.2px 3px rgb(186, 186, 186);*/
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-areas: "area-one area-one area-two area-two area-three area-three area-four area-four area-five area-five";
+            width: auto;
+            max-width: 600px;
+            margin: auto;
+        }
+        .tiny.material-icons{
+            color:aqua;
+            font-size:3rem;
+            text-align: top;
+        }
+        #barcode{
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+        }
+        #titulito{
+            display: none;
+        }
+        #formulario{
+            margin-top: 80px;
+        }
+    }

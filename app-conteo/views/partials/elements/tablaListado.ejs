@@ -1,0 +1,29 @@
+<table class="table" id="tablaListado">
+    <thead class="thead-dark">
+        <tr>
+            <th style="text-align: center;">Bulto</th>
+            <th style="text-align: center;">X</th>
+        </tr>
+    </thead>
+    <tbody id="tablalistado">
+        <% if (listado.length !== 0) { %>
+            <% listado.forEach((element) => { %>
+                <tr id=<%= element.value.code %>>
+                    <td style="text-align: center;"><%=element.value.code%></td>
+                    <td style="text-align: center;"><a href='https://app.sumed.local.com:8080/control/<%=element.id%>/<%=element.value._rev%>'><i class="material-icons">delete</i></a></td>
+                </tr>
+            <% }) %>
+        <% } else { %>
+            <tr>
+                <td style="text-align: right;"></td>
+                <td style="text-align: left;">No se han cargado bultos</td>
+            </tr>
+        <% } %>
+    </tbody>
+    <tfoot>
+        <tr style="background-color: rgb(160, 84, 84);">
+            <td style="text-align: center; color: white;"><h5>Total</h3></td>
+            <td style="text-align: center; color: white;"><h5><%= listado.length %></h3></td>
+        </tr>            
+    </tfoot>
+</table>
