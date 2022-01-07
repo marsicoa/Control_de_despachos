@@ -1,8 +1,13 @@
-<div style="background-color:rgb(202, 202, 202); border-radius: 5px;">
-    <input list="lista" name="browser" id="browser" style="width: 100%;">      
-    <datalist id="lista">
-            <% repartos.forEach((element) => {%>
-                <option value='<%= element.code%>'><%= element.name%></option>
-            <% }) %>
-    </datalist>
+<div style="width: 100%; text-align: center;">
+    <p>Repartos</p>
+</div>
+<div class="grid" style="background-color:rgb(202, 202, 202); border-radius: 5px; padding: 1%;">
+    <% repartos.forEach((element)=> {%>
+        <label style="color: black">
+            <input type="checkbox" class="filled-in" id='<%=element.code%>' value='<%=element.code%>' />
+            <span id="repCode">
+                <%= element.code %>
+            </span>
+        </label>
+        <% }) %>
 </div>
